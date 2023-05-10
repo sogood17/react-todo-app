@@ -40,16 +40,31 @@ body {
   }
 }
 
+.todo-title {
+  color : darkgreen;
+}
+
 .todo-input {
+  width:200px;
   background-color: rgba(0,0,0,0);
   border: none;
+  outline:none;
   color: #363636;
   
 }
 
+.todowrap {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  margin:0 auto;
+}
+
 .newtodo {
+  display:flex;
   background-color: rgb(109, 213, 154);
-  margin : auto 100px;
+  margin : 0 auto;
+  width: 240px;
 }
 
 button {
@@ -62,10 +77,31 @@ button {
   background-color: #f7ffbe;
 } */
 
+.todolist {
+  display:flex;
+  margin : 0 auto;
+  width: 240px;
+  padding:0;
+}
 
+#todo-ul {
+  padding:0;
+}
 
-/* li {
-  background-color: #b8c266;
-  box-shadow: 8 8 8 pink;
-  color: pink
-} */
+li {
+  display: flex;
+  width: 240px;
+  list-style: none;
+  background-color: #f7ffb9;
+  box-shadow: 8 8 8 darkgreen;
+  color: darkgreen;
+  margin : 10px auto;
+  padding:0;
+}
+
+.align-right {
+  text-align: right;
+  justify-content:space-around;
+  justify-items: right;
+  align-items: right;
+}
